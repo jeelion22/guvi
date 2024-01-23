@@ -1,6 +1,8 @@
 This is a demo file for guvi's main boot camp
 for FSD course
 
+Git tracks the changes made to the tracked files
+
 Jira tickets - it sepreates software developement by parts while developing
 version control system - bitbucket: atlasian, github -microsoft
 documentation
@@ -14,4 +16,12 @@ git is a command line interface
 2. staging - QA Teams
 3. production - client side
 
-git add .a => adds all file in current directory to git 
+git add .a => adds all files from the current directory to the staging area.
+git commit -m "your message" => saves changes with commit id
+
+git configuration:
+
+git config --global user.name "your user name in github"
+git config --global user.email "your email addr"
+
+
