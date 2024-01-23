@@ -10,6 +10,7 @@ documentation
 
 
 Git:
+----
 
 git is a command line interface for github
 
@@ -17,14 +18,20 @@ git is a command line interface for github
 2. staging - QA Teams
 3. production - client side
 
+------------------------------------------------------------------------------------
+
 git add . => adds all files from the current directory to the staging area.
 git commit -m "your message" => saves changes with commit id
 
+------------------------------------------------------------------------------------
 git configuration:
 
 git config --global user.name "your user name in github"
 git config --global user.email "your email addr"
 
+------------------------------------------------------------------------------------
 git mv old_name new_name => renaming a file in git
 
 git restore filename => to discard changes in working directory 
+
+------------------------------------------------------------------------------------
