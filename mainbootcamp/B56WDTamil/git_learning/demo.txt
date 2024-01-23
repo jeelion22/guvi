@@ -1,0 +1,17 @@
+This is a demo file for guvi's main boot camp
+for FSD course
+
+Jira tickets - it sepreates software developement by parts while developing
+version control system - bitbucket: atlasian, github -microsoft
+documentation
+
+
+github
+
+git is a command line interface
+
+1. developement - for deveolopers
+2. staging - QA Teams
+3. production - client side
+
+git add .a => adds all file in current directory to git 
