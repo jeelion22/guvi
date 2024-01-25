@@ -1,29 +1,17 @@
 1. Write a blog on the Difference between document and window objects
 
-Document Object Model (DOM)
+Document Object(DOM)
 ---------------------------
+The document object represents the HTML document of a web page. It serves as a programming
+interface for web documents, allowing manipulation of the document structure, style, and content.
+When an HTML document is loaded into a web browser, it becomes a document object, which becomes
+the root node of the HTML document, owning all other nodes.
 
-The document object is an object that represents the documents of a web pages that is the HTML documents
-as the object. It is a programming interface for the web documents and it represents the page so that
-can change the document structure,  style, and content. As this document object represents the document
-as nodes and objects, programming languages can interact with the page.
+Some properties and methods of the document object include bgColor, fgColor, title, forms, links,
+anchors, and methods like write(), writeln(), getElementById(), getElementsByClassName(),
+getElementsByName(), and getElementsByTagName().
 
-Usually, a webpage is a document that can be either displayed in the browser window or as the HTML
-sources. In both these cases, it is the same document. The document object is a document itself and 
-allows us to change this document to manipulated such as changing the structure, style and content.
-
-Let's understand how this object happens
-----------------------------------------
-When an HTML document is loaded into a web browser, it becomes as a document object and that 
-docuemnt object will become the root node of the HTML docuemnt that will be the owner of all
-other nodes.
-
-Certain properties and methods of this object are; they are bgColor, fgColor, title, forms, 
-links, and acnhors. Some of methods of the object are write(), writeln(), getElementById(),
-getElementsByClassName(), getElementsByName(), and geElementsBYTagName().
-
-The below code represents the example code and able see how convenient and ease is document
-object for manipulating a webpage: 
+Here's an example code illustrating the convenience of the document object for manipulating a webpage:
 
 <!DOCTYPE html>
 <html>
@@ -49,7 +37,7 @@ object for manipulating a webpage:
         <input type="button" onclick="myFunction3()" value="Try it">
 
         <p id="creater">You can see here who created this page!</p>
-        <input type="button", onclick="myFunction4()" value="Try it">
+        <input type="button" onclick="myFunction4()" value="Try it">
 
         <script>
 
@@ -88,6 +76,53 @@ object for manipulating a webpage:
 
     </body>
 </html>
+
+------------------------------------------------------------------------------------------------
+
+Window objects
+--------------
+
+A window object in JavaScript represents the browser window where your webpage is displayed.
+We can envision this as a signboard where you can display your menus. This object is responsible
+for your documents displayment.
+
+Some of the properties and methods of this objects are closed, console, docuemnt, frameElement, 
+, frames, etc., as properties, alert(), prompt(), confirm()
+open(), and close(), ect., as methods. These are methods that we can implement on a window object for specified actions.
+
+Suppose our document object has tages with name <iframe>, the brower window will create one object of 
+the HTML document(that is the window where our webpage displayed) and aditional window objects for
+additional frames.
+
+An example of window object method for allerting user:
+
+<body>
+<script>
+
+window.alert("You Test Ends in 2.00 min")
+
+</script>
+</body>
+
+
+Differences among these objects
+-------------------------------
+
+1. At object hierarchy, both document and window are global objects, the document is a property
+of the window object. The document object is part of the window object 
+
+2. When a web page is loaded in a browser, the window and the properties related to that window
+   are stored in the window object.
+
+Overall, the winow object related to the window manipulation and document object is related to
+contents manipulation inside the window.
+
+
+
+
+
+
+
 
 
 
