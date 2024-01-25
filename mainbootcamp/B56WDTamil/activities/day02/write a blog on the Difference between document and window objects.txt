@@ -19,7 +19,8 @@ Certain properties and methods of this object are; they are bgColor, fgColor, ti
 links, and acnhors. Some of methods of the object are write(), writeln(), getElementById(),
 getElementsByClassName(), getElementsByName(), and geElementsBYTagName().
 
-The below represents the example code: 
+The below code represents the example code and able see how convenient and ease is document
+object for manipulating a webpage: 
 
 <!DOCTYPE html>
 <html>
