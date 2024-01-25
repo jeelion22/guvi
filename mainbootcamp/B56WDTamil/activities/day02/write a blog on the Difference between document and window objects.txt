@@ -1,5 +1,8 @@
 1. Write a blog on the Difference between document and window objects
 
+Document Object Model (DOM)
+---------------------------
+
 The document object is an object that represents the documents of a web pages that is the HTML documents
 as the object. It is a programming interface for the web documents and it represents the page so that
 can change the document structure,  style, and content. As this document object represents the document
