@@ -1,0 +1,18 @@
+1. Write a blog on the Difference between document and window objects
+
+The document object is an object that represents the documents of a web pages that is the HTML documents
+as the object. It is a programming interface for the web documents and it represents the page so that
+can change the document structure,  style, and content. As this document object represents the document
+as nodes and objects programming languages can interact with the page
+
+Usually, a webpage is a document that can be either displayed in the browser window or as the HTML
+sources. In both these cases, it is the same document. The document object is a document itself and 
+allows us to change this document to manipulated such as changing the structure, style and content.
+
+Let's understand how this object happens;
+When an HTML document is loaded into a web browser, it becomes as a document object and that 
+docuemnt object will become the root node of the HTML docuemnt that it will be the owner of all
+other nodes.
+
+
+
