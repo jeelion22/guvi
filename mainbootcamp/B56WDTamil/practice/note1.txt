@@ -1,7 +1,7 @@
 
 
 
-The task we perform on a wen is called Event
-functions helps us to perform some specific tasks
+The task we perform on a window is called Event
+functions help us to perform some specific tasks
 
-whenever there  is an event, there will defenetly will be function
+whenever there  is an event, defenetly there will be a function
