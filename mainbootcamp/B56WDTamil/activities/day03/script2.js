@@ -4,14 +4,14 @@
 // a. let obj1 = {name: "Person 1", age: 5};
 // b. let obj2 = {age: 5, name: "Person 1"}
 
-// The direct comparision of objects with equality operators will not work however this 
+// The direct comparision of objects with equality operators will not work. However this 
 // works for primitive datatypes. e.g. console.log(4 == "4"), output; true.
-// When comparing two objects even with th same properties will always gives false.
-// e.g. obj1 == obj2 // false.
+// When comparing two objects even with the same properties will always give false because they are 
+// treated as different objects. e.g. obj1 == obj2 // false.
 
 // To acheive this operation, we can use stringify() method and then use the equality 
 // operator when their properties are in oder. And it will then return a Boolean value as 
-// a result by comparing corresponding key values. 
+// a result by comparing corresponding key's value. 
 
 let obj1 = {name: "Person 1", age: 5};
 let obj2 = {name: "Person 1", age: 5}
@@ -24,7 +24,7 @@ obj2 = {age: 5, name: "Person 1"}
 
 // To handle this issue, we can create a function as shown below and 
 // use looping for check their values whether they are equal or not
-// regardless of their orders with the same properties
+// regardless of their order with the same properties
 
 
 function compareTwoObjects(obj1, obj2) {
