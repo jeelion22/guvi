@@ -1,0 +1,7 @@
+
+
+
+The task we perform on a wen is called Event
+functions helps us to perform some specific tasks
+
+whenever there  is an event, there will defenetly will be function
