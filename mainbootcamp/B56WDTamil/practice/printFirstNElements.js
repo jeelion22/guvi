@@ -5,15 +5,15 @@ function printFirstNElements(arr, n) {
     }
     
     else if (n < 0) {
-        return []
+        return [] ;
     }
     else {
         if (n >= arr.length) {
-            return arr
+            return arr;
         }
         
         else {
-            return arr.slice(0, n)
+            return arr.slice(0, n);
         }
     }
 }
