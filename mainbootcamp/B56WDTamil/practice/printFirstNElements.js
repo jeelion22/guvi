@@ -8,7 +8,7 @@ function printFirstNElements(arr, n = 0) {
         return []
     }
     else {
-        if (n == arr.length) {
+        if (n >= arr.length) {
             return arr
         }
         
