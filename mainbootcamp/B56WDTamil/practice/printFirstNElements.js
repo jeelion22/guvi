@@ -4,18 +4,12 @@ function printFirstNElements(arr, n) {
         return arr[0];
     }
     
-    else if (n < 0) {
+    if (n < 0) {
         return [] ;
     }
-    else {
-        if (n >= arr.length) {
-            return arr;
-        }
-        
-        else {
-            return arr.slice(0, n);
-        }
-    }
+    
+    return arr.slice(0, n) ;
+    
 }
 
 
