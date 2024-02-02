@@ -5,10 +5,14 @@ class Bike {
         this.mileage = mileage ;
         this.speed = speed
     }
+
+    // method
+    print_name = ()  => `The name of the bike is ${this.name}`
 }
 
-const pajaj = new Bike("NS200", "Pearl white", 40, 145)
-const honda = new Bike("Shine Sp", "Red-black", 65, 100)
+const bajaj = new Bike("NS200", "Pearl white", 40, "145km/h")
+const honda = new Bike("Shine Sp", "Red-black", 65, "100km/h")
 
-console.log(pajaj)
-console.log(honda)
+console.log(bajaj)
+// console.log(honda)
+console.log(bajaj.print_name())
