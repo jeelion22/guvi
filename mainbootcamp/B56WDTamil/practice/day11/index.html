@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @media screen and (max-width: 500px) {
+        form {
+          background-color: green;
+        }
+      }
+      @media screen and (min-width: 600px) {
+        form {
+          background-color: orange;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="fname">Firstname</label> <br />
+      <input type="text" name="fname" id="fname" /> <br />
+      <label for="mname">Middlename</label> <br />
+      <input type="text" name="mname" id="mname" /> <br />
+      <label for="lname">Lastname</label> <br />
+      <input type="text" name="lname" id="lname" /> <br />
+      <label for="email">Email</label> <br />
+      <input type="email" name="email" id="email" /> <br />
+      <label for="pwd">Password</label> <br />
+      <input type="password" name="pwd" id="pwd" /> <br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
