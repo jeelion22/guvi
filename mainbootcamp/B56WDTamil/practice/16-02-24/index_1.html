@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 35%;
+            caption-side: bottom;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 1%;
+
+
+        }
+    </style>
+  </head>
+  <body>
+    
+    <table>
+        <caption><b>Students from Physical Science</b></caption>
+      <thead>
+        <tr>
+          <th rowspan="2">Name</th>
+          <th colspan="2">Subject</th>
+          <th rowspan="2">Total Marks</th>
+          <th rowspan="2">Obtained Marks</th>
+        </tr>
+        <tr>
+          <th>Science</th>
+          <th>Maths</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>Jeeva</td>
+                <td>85</td>
+                <td>100</td>
+                <td>200</td>
+                <td>185</td>
+            </tr>
+
+            <tr>
+                <td>Poornashri</td>
+                <td>100</td>
+                <td>100</td>
+                <td>200</td>
+                <td>200</td>
+            </tr>
+
+            <tr>
+                <td>*Harry</td>
+                <td colspan="2">Not Applicable</td>
+                <td>200</td>
+                <td>No data</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">*Presenting research article in UK </td>
+            </tr>
+        </tfoot>
+      </thead>
+    </table>
+  </body>
+</html>
