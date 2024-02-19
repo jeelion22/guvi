@@ -6,12 +6,14 @@
     <title>PAN Card</title>
     <style>
       body {
-        background-color: #f3f3db;
+        background-color: rgb(255, 255, 221);
       }
 
       caption {
         background-color: maroon;
         color: gainsboro;
+        padding-top: 10px;
+       
       }
       caption > div > a {
         color: orange;
@@ -25,15 +27,19 @@
         border-collapse: collapse;
         width: 100%;
         /* margin: 10%; */
+        font-family: Arial, Helvetica, sans-serif;
         
+            
       
       }
       td {
-        border: 1px solid black;
-        
-        
-        
+        border: 1px solid black; 
+        font-size: 13px;
+            
       }
+
+
+      
     </style>
   </head>
   <body>
@@ -52,6 +58,14 @@
         </div>
       </caption>
 <!-- row1 -->
+<thead>
+  <tr>
+    <th></th>
+    <th style="width: 43%;"></th>
+    <th></th>
+  </tr>
+ 
+</thead>
       <tr>
         <td></td>
         <td colspan="2">
@@ -71,7 +85,7 @@
         <input type="text" name="" id=""></td>
       </tr>
 
-      <!-- row3 -->
+      <!-- name -->
       <tr>
         <td><input type="checkbox" name="" id=""></td>
         <td colspan="2"><span class="asterisk">*</span><b>1. Name</b></td>
@@ -95,7 +109,7 @@
         </td>
       </tr>
 
-      <!-- row5 -->
+<!--  -->
 
       <tr>
         <td></td>
@@ -120,7 +134,7 @@
 
       <tr>
         <td></td>
-        <td colspan="2"><span class="asterisk">*</span><b>Name as you would like it printed on the card </b><span style="color: green;">(Prefix like Shri, Smt,
+        <td colspan="2"><span class="asterisk">*</span><b>2. Name as you would like it printed on the card </b><span style="color: green;">(Prefix like Shri, Smt,
             Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s, Alias etc. are not allowed)</span></td>
       </tr>
 
@@ -128,10 +142,10 @@
         <td></td>
         <td colspan="2"><input type="text" name="" id=""></td>
       </tr>
-
+      <!-- Parent details -->
       <tr>
         <td></td>
-        <td colspan="2"><b>Details of Parents</b><span style="color: green;">(Prefix like Shri, Smt,
+        <td colspan="2"><b>3. Details of Parents</b><span style="color: green;">(Prefix like Shri, Smt,
             Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s, Alias etc. are not allowed)</span></td>
       </tr>
 
@@ -215,10 +229,10 @@
         <input type="radio" name="parent-name" id="no">
     </td>
 
-    <!--  -->
+    <!-- date of birth -->
     <tr>
         <td><input type="checkbox" name="" id=""></td>
-        <td><b>5. Date of Birth/INcorporation/Agreement/Partnership <br>
+        <td><b>4. Date of Birth/Incorporation/Agreement/Partnership <br>
         or Trust Deed/Formation of Body of Individuals/ <br>
         Association of Persons</b>
     </td>
@@ -229,11 +243,11 @@
         </td>
 
     </tr>
-    <!--  -->
+    <!-- gender -->
 
     <tr>
         <td><input type="checkbox" name="" id=""></td>
-        <td><b>6. Gender</b></td>
+        <td><b>5. Gender</b></td>
         <td>
             <label for="male">Male</label>
             <input type="radio" name="gender" id="male">
@@ -243,21 +257,24 @@
         </td>
     </tr>
 
-    <!--  -->
+    <!-- photo mismatch -->
 
     <tr>
         <td><input type="checkbox" name="" id=""></td>
-        <td colspan="2"><b>7.Photo Mismatch</b></td>
+        <td colspan="2"><b>6.Photo Mismatch</b></td>
     </tr>
 
-    <tr>
-        <td><input type="checkbox" name="" id=""></td>
-        <td colspan="2"><b>8. Signature Mismatch</b></td>
-    </tr>
+    <!-- signature mismatch -->
 
     <tr>
         <td><input type="checkbox" name="" id=""></td>
-        <td><b>9. Address for Communication</b></td>
+        <td colspan="2"><b>7. Signature Mismatch</b></td>
+    </tr>
+
+    <!-- communication address -->
+    <tr>
+        <td><input type="checkbox" name="" id=""></td>
+        <td><b>8. Address for Communication</b></td>
         <td>
             <label for="residential">Residential</label>
             <input type="radio" name="address" id="residential">
@@ -391,16 +408,18 @@
     </td>
   </tr>
 
-
+<!-- update other address -->
   <tr>
     <td><input type="checkbox" name="" id=""></td>
     <td colspan="2">
         <b>
-            8. If you desire to update your other addresses give required details & Submit proof of other addresses also
+            If you desire to update your other addresses give required details & Submit proof of other addresses also
         </b>
     </td>
     
   </tr>
+
+  <!-- contact number -->
 
   <tr>
     <td rowspan="3"><input type="checkbox" name="" id=""></td>
@@ -430,13 +449,17 @@
     </td>
   </tr>
 
+
+    <!-- email -->
+
   <tr>
     <td></td>
     <td>
         <b>
-            E-mail ID
+            10. E-mail ID
         </b>
     </td>
+
     <td>
         <input type="email" name="" id="">
     </td>
@@ -460,21 +483,254 @@
     <td><input type="text" name="" id="gstn"></td>
   </tr>
 
- 
+  <tr>
+    <td><input type="checkbox" name="" id=""></td>
+    <td colspan="2"><b>Mention other Permanent Account NUmber (PANs) if any, inadvertently allotted to you. Submit proof of surrendered PAN(s) along with the application
 
+    </b></td>  
 
+  </tr>
 
+  <tr>
+    <td></td>
+    <td>
+      <b>
+        PAN 1: <input type="text" name="" id="">
+      </b>
+    </td>
+    <td>
+      <b>
+        PAN 2: <input type="text" name="" id="">
+      </b>
+    </td>
+  </tr>
 
+  <tr>
+    <td></td>
+    <td>
+      <b>
+        PAN 3: <input type="text" name="" id="">
+      </b>
+    </td>
+    <td>
+      <b>
+        PAN 4: <input type="text" name="" id="">
+      </b>
+    </td>
+  </tr>
 
+  <tr>
+    <td></td>
+    <td colspan="2">
+      I/we <input type="text" name="" id="">, the applicant, in the capacity of <select name="" id="">
+        <option value="" selected>--please select--</option>
+        <option value="Himself/Herself">Himself/Herself</option>
+        <option value="Representative Assessee">Representative Assessee</option>
+      </select>
+      do hereby declare that what is stated above is true to the best of my information and belief. <br>
+      I have enclosed <input type="text" name="" id=""> (number of documents) in support of proposed changes/corrections.
+    </td>
 
+  </tr>
 
+  <tr>
+    <td></td>
+    <td colspan="2">Place: <input type="text" name="" id=""></td>
+  </tr>
 
+  <tr>
+    <td></td>
+    <td colspan="2">Verified Today, the <input type="date" name="" id=""></td>
 
+  </tr>
 
+  <tr>
+    <td></td>
+    <td colspan="2">I/We have enclosed <select name="" id="">
+      <option value="--Please select--">--Please select--</option>
+      <option value="Copy of passport">Copy of passport</option>
+      <option value="Copy of Person on Indian Origin card issued by Government of India">Copy of Person on Indian Origin card issued by Government of India</option>
+      <option value="Copy of Overseas Citizenship of India card issued by Government of India">Copy of Overseas Citizenship of India card issued by Government of India</option>
 
+    </select> as proof of identity,
 
+    <select name="" id="">
+      <option value="--Please select--">--Please select--</option>
+      <option value="Copy of passport">Copy of passport</option>
+      <option value="Copy of Bank account statement in the country of residence">Copy of Bank account statement in the country of residence</option>
+      <option value="Copy of Person on Indian Origin card issued by Government of India">Copy of Person on Indian Origin card issued by Government of India</option>
 
+      <option value="Copy of Non-resident External bank account statement in India">Copy of Non-resident External bank account statement in India</option>
+      <option value="Copy of Overseas Citizenship of India card issued by Government of India">Copy of Overseas Citizenship of India card issued by Government of India</option>
 
+    </select> as proof of address,
+    <select name="" id="">
+      <option value="--Please select--">--Please select--</option>
+      <option value="Copy of Pension payment order">Copy of Pension payment order</option>
+      <option value="Copy of Marriage certificate issued by Registrar of Marriage">Copy of Marriage certificate issued by Registrar of Marriage</option>
+      <option value="Copy of Matriculation certificate">Copy of Matriculation certificate</option>
+      <option value="Copy of Passport">Copy of Passport</option>
+      <option value="Copy of Driving licence">Copy of Driving licence</option>
+      <option value="Copy of Domicile certificate issued by the Government">Copy of Domicile certificate issued by the Government</option>
+      <option value="Copy of Affidavit sworn before a magistrate stating the date of birth">Copy of Affidavit sworn before a magistrate stating the date of birth</option>
+      <option value="Copy of Elector &quot; s photo identity card">Copy of Elector&apos;s photo identity card</option>
+      <option value="Copy of Aadhaar Card issued by by the Unique Identification Authority of India">Copy of Aadhaar Card issued by by the Unique Identification Authority of India</option>
+      <option value="Copy of Central Government Health Service Scheme Card">Copy of Central Government Health Service Scheme Card</option>
+      <option value="Copy of Ex-Servicemen Contributory Health Scheme photo card">Copy of Ex-Servicemen Contributory Health Scheme photo card</option>
+      <option value="Copy of Mark sheet of recognised board">Copy of Mark sheet of recognised board</option>
+      </select> as proof of date of birth and 
+      <select name="" id="">
+      <option value="" selected>--Please select--</option>
+      <option value="Copy of PAN card">Copy of PAN card</option>
+      <option value="Copy of PAN allotment letter">Copy of PAN allotment letter</option>
+      <option value="No document">No document</option>
+    </select> as proof of PAN allotted.
+    </td>
+
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>
+      <b>
+        Whether you wish to have?
+      </b>
+    </td>
+    <td>
+      <input type="radio" name="cardtype" id="card">
+      <label for="card">Physical PAN Card & e-PAN card</label> <br>
+      <input type="radio" name="cardtype" id="e-card">
+      <label for="e-card">Only e-PAN card</label>
+
+    </td>
+    
+  </tr>
+
+  <tr>
+    <td></td>
+    <td colspan="2">
+      <b>
+        Other Details
+      </b>
+    </td>
+    
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>
+      <b>
+        Depository Account Details:
+      </b>
+    </td>
+    <td>
+      <b>
+        <label for="acc-detail"><b>DP ID: </b></label>
+        <input type="text" name="" id="acc-detail"> <br>
+        <label for="client-id"><b>Client ID: </b></label>
+        <input type="text" name="" id="client-id"> <br>
+      </b>
+    </td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td colspan="2"><b>Payment Details:</b></td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td colspan="2">
+      <input type="radio" name="payment-mode" id="payment-mode">
+      <label for="payment-mode">Online Payment</label>
+      
+  </tr>
     </table>
+
+
+  <div style="padding-top: 20px;">
+    For paperless PAN Application: 
+    <input type="radio" name="paperless" id="yes">
+    <label for="yes">Yes</label>
+    <input type="radio" name="paperless" id="no">
+    <label for="no">No</label>
+  </div>
+
+  
+  <div>
+    DSC: 
+    <select name="" id="">
+      <option value="" selected>--Select--</option>
+      <option value="Minor">Minor</option>
+      <option value="Lunatic/Idiot">Lunatic/Idiot</option>
+      <option value="Self">Self</option>
+    </select> <a href="#" style="color: brown; " >Guidelines for DSC user</a>
+  </div>
+  
+
+  <div style="display: flex; justify-content: space-between; padding-right: 50px;">
+    <div><label for="photo">Upload Photo:</label></div>
+    <div><input type="file" name="" id="photo"></div>
+    <div></div>
+    
+    
+  </div>
+
+  <div style="display: flex; justify-content: space-between; padding-right: 71px;">
+    <div>
+      <label for="sign">Upload Signature</label>      
+    </div>
+    <div>
+      <input type="file" name="" id="sign">
+    </div>
+    <div></div>
+  </div>
+
+  <div style="display: flex; justify-content: space-between; padding-right: 75px;">
+    <div>
+      <label for="document">Upload Document</label>
+    </div>
+    <div>
+      <input type="file" name="" id="document">
+    </div>
+    <div></div>
+  </div>
+
+  <div style="display: flex; justify-content: space-between; padding-right: 250px;">
+    <div>
+      <label for="document">ALREADY UPLOADED PHOTO</label>
+    </div>
+    <div>
+    <input type="text" name="" id="">
+    </div>
+    <div></div>
+  </div>
+
+  <div style="display: flex; justify-content: space-between; padding-right: 284px;">
+    <div>
+      <label for="document">ALREADY UPLOADED SIGNATURE</label>
+    </div>
+    <div>
+    <input type="text" name="" id="">
+    </div>
+    <div></div>
+  </div>
+
+  <div style="display: flex; justify-content: space-between; padding-right: 219px;">
+    <div>
+      <label for="document">ALREADY UPLOADED DOCUMENTS</label>
+    </div>
+    <div>
+   <textarea name="document" id="document" cols="30" rows="10"></textarea>
+    </div>
+    <div></div>
+  </div>
+  <div style="display: flex; justify-content: center; padding-right: 153px;" >
+    <div>
+      <input type="submit" value="Submit">
+
+    </div>
+  </div>
+
   </body>
 </html>
