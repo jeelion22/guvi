@@ -1,0 +1,11 @@
+h3, .available {
+    text-align: center;
+}
+
+.col-md-4 {
+    background-color: green;
+}
+
+.col-md-8 {
+    background-color: yellow;
+}
