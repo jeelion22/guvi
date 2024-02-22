@@ -1,0 +1,49 @@
+[class*="col"] {
+    padding: 1rem;
+    background-color: #9b78b4;
+    /* border: 2px solid #fff ; */
+    color: #f2f7ff;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+  
+}
+
+.buttons {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+}
+
+.form-control {
+    display: flex;
+}
+
+label {
+    text-wrap: wrap;
+}
+
+.btn {
+    margin-right: 60px;
+
+
+}
+
+body {
+    margin-top: 150px;
+    background-color: rgb(17, 160, 179);
+    flex-wrap: wrap;
+  
+    
+}
+
+form {
+    justify-content: center;
+    /* padding-right: 150px; */
+}
+
