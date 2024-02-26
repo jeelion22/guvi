@@ -1,0 +1,17 @@
+body {
+    background: rgb(109, 108, 108);
+    margin-top: 100px;
+}
+
+div {
+    display: flex;    
+    align-items: center;
+    justify-content: center;  
+    flex-wrap: wrap;
+}
+
+h1{
+    display: flex;
+    color: white;
+    font-size: xxx-large;
+}
