@@ -1,0 +1,18 @@
+
+body {
+        
+        background: linear-gradient(to right, #582cf7, #0c771e, #ff6666);
+    }
+    
+
+.card-img-top {
+    height: 150px;
+    width: auto;
+}
+
+.card {
+   
+    margin: 20px;
+    flex-shrink: 0.5;
+}
+
