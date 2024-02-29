@@ -1,0 +1,32 @@
+
+body {
+
+    display: flex;
+    background: linear-gradient(to right, #582cf7, #0c771e, #ff6666);
+}
+
+h5 {
+    text-align: center;
+    background: #2ceee4;
+    padding: 20px;
+    color: blue;
+    margin: 0px;
+    
+}
+
+.card {
+
+margin: 20px;
+flex-shrink: 0.5;
+text-align: center;
+background: #522ae4;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    color: yellow;
+}
