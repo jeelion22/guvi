@@ -1,0 +1,65 @@
+
+body {
+        
+    background: linear-gradient(to right, #d3aae5, #633dec, #6c7c7c);
+}
+
+
+.card-img-top {
+margin-top:20px;
+margin-left: auto;
+margin-right: auto;
+height: 120px;
+width: 220px;
+
+}
+
+.card {
+   
+margin: 20px;
+
+background: #7f8d7f85;
+text-align: center;
+font-family:sans-serif;
+color: rgb(255, 250, 244);
+
+}
+
+.card-head {
+    display: flex;
+    background: rgb(132, 9, 204);
+    
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+
+    border-radius: 5px;
+
+}
+
+h5 {
+    padding: 10px;
+}
+
+img {
+    display: flex;
+    align-items: centers;
+}
+
+.weather-info {
+    display:none;
+  
+    background: #c1d7e6;
+    border-radius: 5px;
+    color: #3303e4;
+   
+    
+    
+}
+
+.content {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    text-align: left;
+}
