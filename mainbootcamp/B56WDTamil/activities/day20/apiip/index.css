@@ -1,0 +1,46 @@
+body {
+    background:  #dcd1fc;
+}
+
+.input-group {
+    width: 45%;   
+    margin: auto;
+}
+
+h3 {
+    padding: 25px;
+    color: white;
+    
+}
+
+.card {
+    background: #dcd1fc;
+}
+
+.card-footer {
+    display: none;
+    background-color: #ad98ce;
+    
+}
+
+.card-title {
+    background: #6641a3;
+}
+
+.error-body {
+    display: none;
+    margin: auto;
+}
+
+.error-block {
+    padding: 5px;
+    background: #7e4ad3;
+    color: white;
+    border-radius: 3px;
+    width: fit-content;
+}
+
+.card-body:hover, .card-footer:hover {
+    background: #6641a3;
+    color: whitesmoke;
+}
