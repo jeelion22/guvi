@@ -1,0 +1,52 @@
+
+body {
+
+    margin-top: 120px;
+    background: rgb(73, 73, 119)
+
+}
+
+.input-group, .card {
+    width: fit-content;
+    margin: auto;
+    
+ }
+
+ .card {
+    display: none;
+    width: 18rem;
+ }
+
+ .btn {
+    background: rgb(130, 130, 136);
+    color: white;
+ }
+
+ .btn:hover {
+    background: rgb(54, 54, 58);
+ }
+
+ .card-title {
+    background: rgb(32, 144, 163);
+   
+ }
+
+ h5 {
+    padding: 10px;
+    text-align: center;
+    border-radius: 3px;
+    color: white;
+ }
+
+ .card-body {
+    text-align: center;
+ }
+
+ h4 {
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    text-wrap: wrap;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
