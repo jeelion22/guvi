@@ -1,0 +1,11 @@
+.container {
+
+    display: flex;
+    background: rgb(62, 62, 255);
+    column-gap: 10px;
+    padding: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+
+}
+
