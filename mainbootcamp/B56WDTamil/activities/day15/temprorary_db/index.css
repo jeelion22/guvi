@@ -1,18 +1,20 @@
-/* .col-8 {
-    background: yellow;
-}
 
-.col-4 {
-    background: green;
-} */
-
-/* .radio-btns {
-    display: flex;
-    justify-content: left;
-    text-align: center;
-} */
 
 body {
-    background: pink
+    background: rgb(228, 226, 226)
     ;
+}
+
+.container-fluid {
+    margin-top: 20px;
+    width: auto;
+}
+
+thead {
+    font-size: small;
+}
+
+form {
+    font-size: 15px;
+    height: 500%;
 }
