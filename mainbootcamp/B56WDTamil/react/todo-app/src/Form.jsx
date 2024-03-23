@@ -1,40 +1,47 @@
-function Form({ getFormData, editData }) {
+import { useState } from "react";
+
+function Form({ getFormData, values, setValues }) {
+  // const [values, setValues] = useState({ todoName: "", todoDescription: "" });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    setValues({ ...values, [name]: value });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    getFormData(values);
+    setValues({ todoName: "", todoDescription: "" });
+  };
+
   return (
     <div className="d-flex form-data justify-content-center">
-      <form
-        onSubmit={(event) => {
-          event.preventDefault();
-          let todoName = event.target["todo-name"].value;
-          let todoDes = event.target["todo-descripion"].value;
-
-          getFormData({ name: todoName, desc: todoDes });
-          event.target["todo-name"].value = "";
-          event.target["todo-descripion"].value = "";
-        }}
-        action=""
-        className="d-flex gap-1"
-      >
+      <form onSubmit={handleSubmit} className="d-flex gap-1">
         <div>
           <input
             type="text"
-            name="todo-name"
-            id="todo-name"
+            name="todoName"
+            id="todoName"
             placeholder="ToDo Name"
+            value={values.todoName}
+            onChange={handleChange}
           />
         </div>
         <div>
           <input
             type="text"
-            name="todo-descripion"
-            id="todo-descripion"
+            name="todoDescription"
+            id="todoDescription"
             placeholder="ToDo Descripion"
+            value={values.todoDescription}
+            onChange={handleChange}
           />
         </div>
         <div>
           <input type="submit" value="Add ToDo" />
         </div>
       </form>
-      
     </div>
   );
 }

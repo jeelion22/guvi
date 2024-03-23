@@ -1,19 +1,33 @@
 import { useState } from "react";
+
 import "/node_modules/bootstrap/dist/css/bootstrap.css";
-// import "./App.css";
 
 import Header from "./Header";
 import Navbar from "./Navbar";
 import Card from "./Card";
+import Form from "./Form";
 
 function App() {
+  const [values, setValues] = useState({ todoName: "", todoDescription: "" });
   const [FormData, setFormData] = useState([]);
-  const [editData, seteditData] = useState({});
 
   let getFormData = (formData) => {
-    formData = { ...formData, id: Math.random(), status: "Not Completed" };
+    if (formData.id) {
+      FormData.map((data) => {
+        if (data.id === formData.id) {
+          data.todoDescription = formData.todoDescription;
+          data.todoName = formData.todoName;
+        }
+      });
+    } else {
+      formData = {
+        ...formData,
+        id: FormData.length + 1,
+        status: "Not Completed",
+      };
 
-    setFormData([...FormData, formData]);
+      setFormData([...FormData, formData]);
+    }
   };
 
   let deleteToDo = (FormDataId) => {
@@ -21,13 +35,13 @@ function App() {
   };
 
   let editToDo = (data) => {
-    seteditData(data);
-    console.log(editData);
+    setValues(data);
+    console.log(data);
   };
 
   return (
     <div className="homepage">
-      <Header getFormData={getFormData} editData={editData} />
+      <Header getFormData={getFormData} values={values} setValues={setValues} />
 
       <div>
         <Navbar />

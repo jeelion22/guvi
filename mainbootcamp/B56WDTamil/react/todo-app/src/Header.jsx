@@ -1,11 +1,11 @@
 import Title from "./Title";
 import Form from "./Form";
 
-function Header({ getFormData, editData }) {
+function Header({ getFormData, values, setValues }) {
   return (
     <div className="container text-center">
       <Title />
-      <Form getFormData={getFormData} editData={editData} />
+      <Form getFormData={getFormData} values={values} setValues={setValues} />
     </div>
   );
 }
